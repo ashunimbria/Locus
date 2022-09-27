@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ADE905E28E1CA5D00AECACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE905D28E1CA5D00AECACD /* AppDelegate.swift */; };
+		1ADE906028E1CA5D00AECACD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE905F28E1CA5D00AECACD /* SceneDelegate.swift */; };
+		1ADE906228E1CA5D00AECACD /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE906128E1CA5D00AECACD /* FormViewController.swift */; };
+		1ADE906528E1CA5D00AECACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE906328E1CA5D00AECACD /* Main.storyboard */; };
+		1ADE906728E1CA5F00AECACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE906628E1CA5F00AECACD /* Assets.xcassets */; };
+		1ADE906A28E1CA5F00AECACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE906828E1CA5F00AECACD /* LaunchScreen.storyboard */; };
+		1ADE907528E1CA5F00AECACD /* LocusTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE907428E1CA5F00AECACD /* LocusTestAppTests.swift */; };
+		1ADE907F28E1CA6000AECACD /* LocusTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE907E28E1CA6000AECACD /* LocusTestAppUITests.swift */; };
+		1ADE908128E1CA6000AECACD /* LocusTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE908028E1CA6000AECACD /* LocusTestAppUITestsLaunchTests.swift */; };
+		1ADE908E28E1DB4700AECACD /* ImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE908D28E1DB4700AECACD /* ImageViewPresenter.swift */; };
+		1ADE909028E1E0FA00AECACD /* FormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE908F28E1E0FA00AECACD /* FormData.swift */; };
+		1ADE909328E1F88800AECACD /* myJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ADE909228E1F88800AECACD /* myJson.json */; };
+		1ADE909528E1FA8800AECACD /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE909428E1FA8800AECACD /* DisplayViewController.swift */; };
+		1ADE909728E2176900AECACD /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE909628E2176900AECACD /* JSONManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1ADE907128E1CA5F00AECACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADE905228E1CA5C00AECACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADE905928E1CA5C00AECACD;
+			remoteInfo = LocusTestApp;
+		};
+		1ADE907B28E1CA6000AECACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADE905228E1CA5C00AECACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1ADE905928E1CA5C00AECACD;
+			remoteInfo = LocusTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ADE905A28E1CA5C00AECACD /* LocusTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocusTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADE905D28E1CA5D00AECACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1ADE905F28E1CA5D00AECACD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1ADE906128E1CA5D00AECACD /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		1ADE906428E1CA5D00AECACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1ADE906628E1CA5F00AECACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1ADE906928E1CA5F00AECACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1ADE906B28E1CA5F00AECACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ADE907028E1CA5F00AECACD /* LocusTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocusTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADE907428E1CA5F00AECACD /* LocusTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTestAppTests.swift; sourceTree = "<group>"; };
+		1ADE907A28E1CA6000AECACD /* LocusTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocusTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADE907E28E1CA6000AECACD /* LocusTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTestAppUITests.swift; sourceTree = "<group>"; };
+		1ADE908028E1CA6000AECACD /* LocusTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocusTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1ADE908D28E1DB4700AECACD /* ImageViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenter.swift; sourceTree = "<group>"; };
+		1ADE908F28E1E0FA00AECACD /* FormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormData.swift; sourceTree = "<group>"; };
+		1ADE909228E1F88800AECACD /* myJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = myJson.json; sourceTree = "<group>"; };
+		1ADE909428E1FA8800AECACD /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		1ADE909628E2176900AECACD /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ADE905728E1CA5C00AECACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE906D28E1CA5F00AECACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE907728E1CA6000AECACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ADE905128E1CA5C00AECACD = {
+			isa = PBXGroup;
+			children = (
+				1ADE905C28E1CA5C00AECACD /* LocusTestApp */,
+				1ADE907328E1CA5F00AECACD /* LocusTestAppTests */,
+				1ADE907D28E1CA6000AECACD /* LocusTestAppUITests */,
+				1ADE905B28E1CA5C00AECACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1ADE905B28E1CA5C00AECACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE905A28E1CA5C00AECACD /* LocusTestApp.app */,
+				1ADE907028E1CA5F00AECACD /* LocusTestAppTests.xctest */,
+				1ADE907A28E1CA6000AECACD /* LocusTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1ADE905C28E1CA5C00AECACD /* LocusTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE909A28E21A7A00AECACD /* SupportingFiles */,
+				1ADE909928E21A6F00AECACD /* Controller */,
+				1ADE909828E21A6600AECACD /* Manager */,
+				1ADE909128E1E10300AECACD /* Model */,
+				1ADE906328E1CA5D00AECACD /* Main.storyboard */,
+				1ADE906628E1CA5F00AECACD /* Assets.xcassets */,
+				1ADE906828E1CA5F00AECACD /* LaunchScreen.storyboard */,
+				1ADE906B28E1CA5F00AECACD /* Info.plist */,
+			);
+			path = LocusTestApp;
+			sourceTree = "<group>";
+		};
+		1ADE907328E1CA5F00AECACD /* LocusTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE907428E1CA5F00AECACD /* LocusTestAppTests.swift */,
+			);
+			path = LocusTestAppTests;
+			sourceTree = "<group>";
+		};
+		1ADE907D28E1CA6000AECACD /* LocusTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE907E28E1CA6000AECACD /* LocusTestAppUITests.swift */,
+				1ADE908028E1CA6000AECACD /* LocusTestAppUITestsLaunchTests.swift */,
+			);
+			path = LocusTestAppUITests;
+			sourceTree = "<group>";
+		};
+		1ADE909128E1E10300AECACD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE908F28E1E0FA00AECACD /* FormData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ADE909828E21A6600AECACD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE909628E2176900AECACD /* JSONManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1ADE909928E21A6F00AECACD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE908D28E1DB4700AECACD /* ImageViewPresenter.swift */,
+				1ADE906128E1CA5D00AECACD /* FormViewController.swift */,
+				1ADE909428E1FA8800AECACD /* DisplayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ADE909A28E21A7A00AECACD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1ADE909228E1F88800AECACD /* myJson.json */,
+				1ADE905D28E1CA5D00AECACD /* AppDelegate.swift */,
+				1ADE905F28E1CA5D00AECACD /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1ADE905928E1CA5C00AECACD /* LocusTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADE908428E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestApp" */;
+			buildPhases = (
+				1ADE905628E1CA5C00AECACD /* Sources */,
+				1ADE905728E1CA5C00AECACD /* Frameworks */,
+				1ADE905828E1CA5C00AECACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocusTestApp;
+			productName = LocusTestApp;
+			productReference = 1ADE905A28E1CA5C00AECACD /* LocusTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1ADE906F28E1CA5F00AECACD /* LocusTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADE908728E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestAppTests" */;
+			buildPhases = (
+				1ADE906C28E1CA5F00AECACD /* Sources */,
+				1ADE906D28E1CA5F00AECACD /* Frameworks */,
+				1ADE906E28E1CA5F00AECACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADE907228E1CA5F00AECACD /* PBXTargetDependency */,
+			);
+			name = LocusTestAppTests;
+			productName = LocusTestAppTests;
+			productReference = 1ADE907028E1CA5F00AECACD /* LocusTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1ADE907928E1CA6000AECACD /* LocusTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ADE908A28E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestAppUITests" */;
+			buildPhases = (
+				1ADE907628E1CA6000AECACD /* Sources */,
+				1ADE907728E1CA6000AECACD /* Frameworks */,
+				1ADE907828E1CA6000AECACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ADE907C28E1CA6000AECACD /* PBXTargetDependency */,
+			);
+			name = LocusTestAppUITests;
+			productName = LocusTestAppUITests;
+			productReference = 1ADE907A28E1CA6000AECACD /* LocusTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADE905228E1CA5C00AECACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1ADE905928E1CA5C00AECACD = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					1ADE906F28E1CA5F00AECACD = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 1ADE905928E1CA5C00AECACD;
+					};
+					1ADE907928E1CA6000AECACD = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 1ADE905928E1CA5C00AECACD;
+					};
+				};
+			};
+			buildConfigurationList = 1ADE905528E1CA5C00AECACD /* Build configuration list for PBXProject "LocusTestApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1ADE905128E1CA5C00AECACD;
+			productRefGroup = 1ADE905B28E1CA5C00AECACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1ADE905928E1CA5C00AECACD /* LocusTestApp */,
+				1ADE906F28E1CA5F00AECACD /* LocusTestAppTests */,
+				1ADE907928E1CA6000AECACD /* LocusTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1ADE905828E1CA5C00AECACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADE906A28E1CA5F00AECACD /* LaunchScreen.storyboard in Resources */,
+				1ADE906728E1CA5F00AECACD /* Assets.xcassets in Resources */,
+				1ADE906528E1CA5D00AECACD /* Main.storyboard in Resources */,
+				1ADE909328E1F88800AECACD /* myJson.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE906E28E1CA5F00AECACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE907828E1CA6000AECACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ADE905628E1CA5C00AECACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADE906228E1CA5D00AECACD /* FormViewController.swift in Sources */,
+				1ADE909728E2176900AECACD /* JSONManager.swift in Sources */,
+				1ADE909528E1FA8800AECACD /* DisplayViewController.swift in Sources */,
+				1ADE908E28E1DB4700AECACD /* ImageViewPresenter.swift in Sources */,
+				1ADE905E28E1CA5D00AECACD /* AppDelegate.swift in Sources */,
+				1ADE909028E1E0FA00AECACD /* FormData.swift in Sources */,
+				1ADE906028E1CA5D00AECACD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE906C28E1CA5F00AECACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADE907528E1CA5F00AECACD /* LocusTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1ADE907628E1CA6000AECACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADE907F28E1CA6000AECACD /* LocusTestAppUITests.swift in Sources */,
+				1ADE908128E1CA6000AECACD /* LocusTestAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ADE907228E1CA5F00AECACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADE905928E1CA5C00AECACD /* LocusTestApp */;
+			targetProxy = 1ADE907128E1CA5F00AECACD /* PBXContainerItemProxy */;
+		};
+		1ADE907C28E1CA6000AECACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1ADE905928E1CA5C00AECACD /* LocusTestApp */;
+			targetProxy = 1ADE907B28E1CA6000AECACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1ADE906328E1CA5D00AECACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADE906428E1CA5D00AECACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1ADE906828E1CA5F00AECACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ADE906928E1CA5F00AECACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1ADE908228E1CA6000AECACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1ADE908328E1CA6000AECACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1ADE908528E1CA6000AECACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocusTestApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1ADE908628E1CA6000AECACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocusTestApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1ADE908828E1CA6000AECACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocusTestApp.app/LocusTestApp";
+			};
+			name = Debug;
+		};
+		1ADE908928E1CA6000AECACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocusTestApp.app/LocusTestApp";
+			};
+			name = Release;
+		};
+		1ADE908B28E1CA6000AECACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocusTestApp;
+			};
+			name = Debug;
+		};
+		1ADE908C28E1CA6000AECACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashish.LocusTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LocusTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ADE905528E1CA5C00AECACD /* Build configuration list for PBXProject "LocusTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADE908228E1CA6000AECACD /* Debug */,
+				1ADE908328E1CA6000AECACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADE908428E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADE908528E1CA6000AECACD /* Debug */,
+				1ADE908628E1CA6000AECACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADE908728E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADE908828E1CA6000AECACD /* Debug */,
+				1ADE908928E1CA6000AECACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1ADE908A28E1CA6000AECACD /* Build configuration list for PBXNativeTarget "LocusTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ADE908B28E1CA6000AECACD /* Debug */,
+				1ADE908C28E1CA6000AECACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADE905228E1CA5C00AECACD /* Project object */;
+}
